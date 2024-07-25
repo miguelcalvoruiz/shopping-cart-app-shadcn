@@ -48,21 +48,21 @@ const ProductForm = ({ addProduct }) => {
             <Input
               className="p-2 border border-[var(--custom-gray)] rounded-md"
               type="text"
-              placeholder="Nombre"
+              placeholder="Nombre..."
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <Input
               className="p-2 border border-[var(--custom-gray)] rounded-md"
               type="number"
-              placeholder="Precio"
+              placeholder="Precio..."
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             />
             <Input
               className="p-2 border border-[var(--custom-gray)] rounded-md"
               type="text"
-              placeholder="Imagen"
+              placeholder="Imagen... (Link)"
               value={image}
               onChange={(e) => setImage(e.target.value)}
             />
@@ -70,6 +70,7 @@ const ProductForm = ({ addProduct }) => {
           <div className="flex flex-col space-y-4 w-1/2">
             <Textarea
               className="resize-none h-24 p-2 border border-[var(--custom-gray)] rounded-md"
+              maxlength="200"
               placeholder="Descripción..."
               value={description}
               onChange={(e) => setDescription(e.target.value)}

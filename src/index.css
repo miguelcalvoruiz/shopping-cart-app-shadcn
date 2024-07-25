@@ -51,6 +51,23 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--custom-gray);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--card-background);
+}
+
 .bin-button:hover .bin-top {
   transform: rotate(45deg);
 }

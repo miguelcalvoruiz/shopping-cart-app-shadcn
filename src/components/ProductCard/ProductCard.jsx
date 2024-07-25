@@ -25,16 +25,16 @@ const ProductCard = ({ product, removeProduct, updateQuantity }) => {
     };
 
     return (
-        <Card className="shadow-lg flex items-center p-4 mb-4 rounded-lg bg-[var(--card-background)]">
+        <Card className="shadow-lg flex flex-col md:flex-row items-center p-4 mb-4 rounded-lg bg-[var(--card-background)]">
             <img className="w-24 h-24 object-cover rounded-lg mr-4" src={product.image} alt={product.name} />
             <CardContent className="flex-1">
                 <CardHeader className="p-3">
-                    <CardTitle className="text-4xl font-bold text-[var(--highlight-green)]">{product.name}</CardTitle>
+                    <CardTitle className="text-2xl md:text-4xl font-bold text-[var(--highlight-green)]">{product.name}</CardTitle>
                 </CardHeader>
                 <CardDescription className="text-[var(--text-body)] mb-4 max-w-sm">{product.description || <span>&nbsp;</span>}</CardDescription>
             </CardContent>
-            <div className="flex flex-col items-center">
-                <span className="text-4xl font-bold text-[var(--text-price)] mb-4">{product.price}€</span>
+            <div className="flex flex-col items-center mt-4 md:mt-0 md:ml-4">
+                <span className="text-2xl md:text-4xl font-bold text-[var(--text-price)] mb-4">{product.price}€</span>
                 <div className="flex items-center mb-4">
                     <Button onClick={handleDecrement} className="text-base border border-solid border-[var(--text-button)] h-6 px-2 py-1 bg-[var(--button-decrement)] text-[var(--text-button)] rounded-md hover:bg-[var(--button-decrement-hover)]">-</Button>
                     <span className="mx-2 text-lg font-semibold text-[var(--text-body)]">{product.quantity}</span>

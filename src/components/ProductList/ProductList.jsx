@@ -7,6 +7,10 @@ import './../../index.css';
 const ProductList = ({ products, removeProduct, updateQuantity }) => {
     const [filter, setFilter] = useState('');
 
+    /**
+     * Filtra los productos según el término de búsqueda.
+     * @returns {Array} - La lista de productos filtrados.
+     */
     const filteredProducts = products.filter(product =>
         product.name.toLowerCase().includes(filter.toLowerCase())
     );
