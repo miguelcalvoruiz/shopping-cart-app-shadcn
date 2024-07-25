@@ -1,7 +1,8 @@
 
 # Shopping Cart App
-
-![Shopping Cart](./src/assets/shopping-cart.svg)
+<div style="display: flex; justify-content: center;">
+  <img src="./src/assets/shopping-cart.svg" alt="Shopping Cart" width="300" height="200">
+</div>
 
 ## Descripción
 
@@ -91,29 +92,6 @@ Esta aplicación está configurada para ser desplegada en GitHub Pages. Para des
     npm run build
     npm run deploy
     ```
-
-## Contribución
-
-Si deseas contribuir a este proyecto, por favor sigue estos pasos:
-
-1. **Fork el repositorio.**
-2. **Crea una nueva rama:**
-    ```bash
-    git checkout -b feature/nueva-funcionalidad
-    ```
-3. **Realiza los cambios y commitea:**
-    ```bash
-    git commit -m 'Añadir nueva funcionalidad'
-    ```
-4. **Sube los cambios a tu rama:**
-    ```bash
-    git push origin feature/nueva-funcionalidad
-    ```
-5. **Abre un Pull Request.**
-
-## Licencia
-
-Este proyecto está licenciado bajo la [MIT License](./LICENSE).
 
 ## Contacto
 
